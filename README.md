@@ -22,17 +22,7 @@ all movies downloads
             justify-content: center;
             align-items: center;
             height: 100vh;
-        }
-
-        /* ROTATING NAME */
-        .name {
-            font-size: 40px;
-            font-weight: bold;
-            text-transform: uppercase;
-            color: white;
-            text-shadow: 0 0 10px #ff0000, 0 0 20px #ff7300, 0 0 30px #fffb00;
-            animation: rotateName 5s ease-in-out infinite, glowEffect 1.5s infinite alternate;
-            margin-bottom: 30px;
+        
         }
 
         @keyframes rotateName {
