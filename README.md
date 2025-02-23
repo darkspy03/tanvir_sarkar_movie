@@ -26,7 +26,7 @@ all movies downloads
 
         /* ROTATING NAME */
         .name {
-            font-size: 60px;
+            font-size: 40px;
             font-weight: bold;
             text-transform: uppercase;
             color: white;
