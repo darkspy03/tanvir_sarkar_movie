@@ -1,6 +1,6 @@
 # tanvir_sarkar_movie
 all movies downloads 
-<!DOCTYPE html>
+<all movies here>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -93,7 +93,7 @@ all movies downloads
 </head>
 <body>
     <!-- Rotating Name -->
-    <div class="name">TANVIR SARKAR</div>
+    <div class="name">TAN</div>
 
     <!-- Links Section -->
     <h2>Welcome to TANVIR Movies Download</h2>
