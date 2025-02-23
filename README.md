@@ -1,4 +1,4 @@
-# tanvir_sarkar_movie
+# tanvir_sarkar_movies
 all movies downloads 
 <all movies here>
 <html lang="en">
@@ -82,8 +82,6 @@ all movies downloads
     </style>
 </head>
 <body>
-    <!-- Rotating Name -->
-    <div class="name">TAN</div>
 
     <!-- Links Section -->
     <h2>Welcome to TANVIR Movies Download</h2>
