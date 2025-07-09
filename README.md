@@ -1,95 +1,81 @@
-# tanvir_sarkar_movies
-all movies downloads 
-<all movies here>
-<html lang="en">
+
+#afif & falak birthday 
+<!DOCTYPE html>
+<html lang="bn">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rotating Name & Stylish Links</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            background-color: #1a1a1a;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        
-        }
-
-        @keyframes rotateName {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        @keyframes glowEffect {
-            0% { text-shadow: 0 0 10px #ff0000, 0 0 20px #ff7300, 0 0 30px #fffb00; }
-            100% { text-shadow: 0 0 15px #ff7300, 0 0 25px #fffb00, 0 0 35px #48ff00; }
-        }
-
-        /* LINKS SECTION */
-        h2 {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-
-        .links-container {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .link-button {
-            text-decoration: none;
-            color: white;
-            background: linear-gradient(45deg, #ff416c, #ff4b2b);
-            padding: 15px 30px;
-            border-radius: 10px;
-            font-size: 20px;
-            font-weight: bold;
-            text-align: center;
-            transition: 0.3s;
-            display: inline-block;
-            width: 250px;
-            text-transform: uppercase;
-            box-shadow: 0 4px 10px rgba(255, 75, 43, 0.5);
-        }
-
-        .link-button:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 15px rgba(255, 75, 43, 0.7);
-        }
-
-        .link-button:nth-child(2) {
-            background: linear-gradient(45deg, #2193b0, #6dd5ed);
-        }
-
-        .link-button:nth-child(3) {
-            background: linear-gradient(45deg, #ff9a9e, #fad0c4);
-        }
-
-        .link-button:nth-child(4) {
-            background: linear-gradient(45deg, #ff512f, #dd2476);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎁 Birthday Gift</title>
+  <style>
+    body {
+      background: #011;
+      color: white;
+      text-align: center;
+      font-family: sans-serif;
+    }
+    .gift {
+      width: 150px;
+      height: 150px;
+      margin: 80px auto;
+      background: url('https://cdn-icons-png.flaticon.com/512/3534/3534033.png') no-repeat center/contain;
+      animation: bounce 1s infinite alternate;
+      cursor: pointer;
+    }
+    @keyframes bounce {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-20px); }
+    }
+    .msg {
+      display: none;
+      margin: 20px auto;
+      padding: 15px;
+      width: 90%;
+      max-width: 360px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 10px;
+    }
+    .btn {
+      display: none;
+      margin: 10px;
+      padding: 10px 20px;
+      background: #0f0;
+      border: none;
+      color: black;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
+  <h1>🎉 শুভ জন্মদিন! 🎂</h1>
+  <div class="gift" onclick="openBox()"></div>
+  <div class="msg" id="msgBox">🎁 গিফট বক্স খুলে দেখো!</div>
+  <button class="btn" id="nextBtn" onclick="showNext()">পরবর্তী বার্তা দেখাও</button>
 
-    <!-- Links Section -->
-    <h2>Welcome to TANVIR Movies Download</h2>
-    <div class="links-container">
-        <a href="https://filmyfly.phd/" class="link-button" target="_blank">FilmyFly</a>
-        <a href="https://filmyworlds.christmas/" class="link-button" target="_blank">Filmy World</a>
-        <a href="https://vegamovies.rs/" class="link-button" target="_blank">Vega Movies</a>
-        <a href="https://bollyflix.kids/" class="link-button" target="_blank">Bolly Flix</a>
-    </div>
+  <audio autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    const msgs = [
+      "🕌 আল্লাহ তোমার জীবনকে বরকতপূর্ণ করুন 💖",
+      "📿 'রব্বি যিদনী ইল্‌মা' – হে আল্লাহ, আমায় জ্ঞান বাড়িয়ে দাও",
+      "🤲 প্রতিটি দিন হোক ইবাদতে ভরপুর",
+      "🌙 'ইন্নাল্লাহা মা’আস্ সাবিরীন' – আল্লাহ ধৈর্যশীলদের সাথে আছেন",
+      "❤️ হাদিস: 'তুমি যা ভালোবাসো, তাই হবে তোমার কিয়ামতের সাথী'",
+      "✨ আল্লাহ যেন তোমাকে দুনিয়া ও আখিরাতে সফল করেন। আমিন।"
+    ];
+    let i = 0;
+    function openBox() {
+      document.querySelector('.gift').style.display = 'none';
+      document.getElementById('msgBox').style.display = 'block';
+      document.getElementById('nextBtn').style.display = 'inline-block';
+      document.getElementById('msgBox').innerText = msgs[i];
+    }
+    function showNext() {
+      i = (i + 1) % msgs.length;
+      document.getElementById('msgBox').innerText = msgs[i];
+    }
+  </script>
 </body>
 </html>
